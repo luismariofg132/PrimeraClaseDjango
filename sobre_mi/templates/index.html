@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tituloPrueba }}</title>
+</head>
+
+<body>
+    <h1>Hola mundo desde un archivo HTML</h1>
+    <br>
+    <span>Desarrollado Con Amor por: {{ desarrollador }}</span>
+
+    <br>
+
+    {% for item in numeros %}
+    <span>{{ item }}</span>
+    {% endfor %}
+
+    {% if admin == True %}
+    <span>El usuario es administrador</span>
+    {% else %}
+    <span>El usuario no es administrador</span>
+    {% endif %}
+
+</body>
+
+</html>
